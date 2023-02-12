@@ -595,17 +595,17 @@ KS2Tab:AddButton({
 })
 KS2Tab:AddLabel("DaHood")
 KS2Tab:Addbutton({
-    Name = "All in One script",
+    Name = "AllIn1",
     Callback = function()
         SwagMode()
     end
 })
 
 
-GSTab:AddLabel("Energy Assault")
-GSTab:AddLabel("Be A Parkour Ninja")
-GSTab:AddLabel("KAT")
-GSTab:AddLabel("DaHood")
+SGTab:AddLabel("Energy Assault")
+SGTab:AddLabel("Be A Parkour Ninja")
+SGTab:AddLabel("KAT")
+SGTab:AddLabel("DaHood")
 -- DEFINE CREDITS TAB
 CRTab:AddLabel("ScriptHub is made by:")
 CRTab:AddLabel("Begula")
