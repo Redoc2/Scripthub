@@ -594,7 +594,7 @@ KS2Tab:AddButton({
     end
 })
 KS2Tab:AddLabel("DaHood")
-KS2Tab:Addbutton({
+KS2Tab:AddButton({
     Name = "AllIn1",
     Callback = function()
         SwagMode()
