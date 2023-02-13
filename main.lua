@@ -600,7 +600,7 @@ KSTab:AddButton({
 	Callback = function()
 		PizzaPlace()
 	end
-)}
+})
 KS2Tab:AddLabel("KAT")
 KS2Tab:AddButton({
     Name = "Aimbot + ESP",
