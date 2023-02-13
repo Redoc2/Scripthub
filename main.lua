@@ -571,6 +571,9 @@ end
 function SwagMode()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
 end
+function PizzaPlace()
+	loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/bb2f1182a224999682a2d1a87aa8517a/raw/66c7791224be0434b23938ca26244238649d0143/ameicaa", true))()
+end
 KSTab:AddLabel("Energy Assault")
 KSTab:AddButton({
 	Name = "Silent Aim",
@@ -591,6 +594,13 @@ KSTab:AddButton({
         NinjaHitboxes()
     end
 })
+KSTab:AddLabel("Work at a Pizza Place")
+KSTab:AddButton({
+	Name = "All In One",
+	Callback = function()
+		PizzaPlace()
+	end
+)}
 KS2Tab:AddLabel("KAT")
 KS2Tab:AddButton({
     Name = "Aimbot + ESP",
@@ -600,7 +610,7 @@ KS2Tab:AddButton({
 })
 KS2Tab:AddLabel("DaHood")
 KS2Tab:AddButton({
-    Name = "AllIn1",
+    Name = "All In One",
     Callback = function()
         SwagMode()
     end
