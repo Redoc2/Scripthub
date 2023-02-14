@@ -61,7 +61,7 @@ KSTab:AddButton({
     end
 })
 KSTab:AddLabel("Work At A Pizza Place")
-KS2Tab:AddButton({
+KSTab:AddButton({
     Name = "All in one",
     Callback = function()
         PizzaPlace()
