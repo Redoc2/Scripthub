@@ -76,9 +76,16 @@ KS2Tab:AddButton({
 })
 KS2Tab:AddLabel("DaHood")
 KS2Tab:AddButton({
-    Name = "AllIn1",
+    Name = "All in One",
     Callback = function()
         SwagMode()
+    end
+})
+KS2Tab:AddLabel("Doors")
+KS2Tab:AddButton({
+    Name = "All in One",
+    Callback = function()
+        Doors()
     end
 })
 MSTab:AddButton({
