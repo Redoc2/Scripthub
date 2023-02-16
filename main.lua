@@ -147,6 +147,8 @@ SGTab:AddLabel("Energy Assault")
 SGTab:AddLabel("Be A Parkour Ninja")
 SGTab:AddLabel("KAT")
 SGTab:AddLabel("DaHood")
+SGTab:AddLabel("Work At A Pizza Place")
+SGTab:AddLabel("Doors")
 -- DEFINE CREDITS TAB
 CRTab:AddLabel("ScriptHub is made by:")
 CRTab:AddLabel("Begula")
