@@ -20,6 +20,11 @@ local MSTab = Window:MakeTab({
     Icon = " ",
     PremiumOnly = false
 })
+local AIO = Window:MakeTab({
+    Name = "All in one",
+    Icon = " ",
+    PremiumOnly = false
+})
 
 local SGTab = Window:MakeTab({
 	Name = "Games",
@@ -88,6 +93,36 @@ KS2Tab:AddButton({
         Doors()
     end
 })
+
+
+
+AIO:AddButton({
+    Name = "Work at a Pizza Place",
+    Callback = function()
+        PizzaPlace()
+    end
+})
+AIO:AddButton({
+    Name = "Energy Assault",
+    Callback = function()
+        EnergyAssaultSilentAim()
+        EnergyAssaultESP()
+    end
+})
+AIO:AddButton({
+    Name = "Doors",
+    Callback = function()
+        Doors()
+    end
+})
+AIO:AddButton({
+    Name = "DaHood",
+    Callback = function()
+        SwagMode()
+    end
+})
+
+
 MSTab:AddButton({
     Name = "CMD-X",
     Callback = function()
@@ -99,6 +134,12 @@ MSTab:AddButton({
     Callback = function()
         ------Fate's Admin (brought to you by Hacks Home)--------
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+    end
+})
+MSTab:AddButton({
+    Name = "Rejoin",
+    Callback = function()
+        game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
     end
 })
 
