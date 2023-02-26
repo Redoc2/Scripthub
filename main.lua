@@ -93,7 +93,13 @@ KS2Tab:AddButton({
         Doors()
     end
 })
-
+KS2Tab:AddLabel("Murder Mystery 2")
+KS2Tab:AddButton({
+    Name = "All in One",
+    Callback = function()
+        MM2()
+    end
+})
 
 
 AIO:AddButton({
@@ -149,6 +155,7 @@ SGTab:AddLabel("KAT")
 SGTab:AddLabel("DaHood")
 SGTab:AddLabel("Work At A Pizza Place")
 SGTab:AddLabel("Doors")
+SGTab:AddLabel("Murder Mystery 2")
 -- DEFINE CREDITS TAB
 CRTab:AddLabel("ScriptHub is made by:")
 CRTab:AddLabel("Begula")
