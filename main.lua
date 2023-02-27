@@ -72,6 +72,13 @@ KSTab:AddButton({
         PizzaPlace()
     end
 })
+KSTab:AddLabel("SCP 3008")
+KSTab:AddButton({
+    Name = "All in One",
+    Callback = function()
+        loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/scripts/main/3008.lua')()
+    end
+})
 KS2Tab:AddLabel("KAT")
 KS2Tab:AddButton({
     Name = "Aimbot + ESP",
@@ -156,6 +163,7 @@ SGTab:AddLabel("DaHood")
 SGTab:AddLabel("Work At A Pizza Place")
 SGTab:AddLabel("Doors")
 SGTab:AddLabel("Murder Mystery 2")
+SGTAB:AddLabel("SCP 3008")
 -- DEFINE CREDITS TAB
 CRTab:AddLabel("ScriptHub is made by:")
 CRTab:AddLabel("Begula")
