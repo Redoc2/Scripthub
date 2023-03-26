@@ -1,4 +1,5 @@
 -- DEFINE LIBRARY
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Scripthub", Text = "Made by Redoc_2"})
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Redoc2/Scripthub/main/scripts.lua')))()
 --DEFINE WINDOW
@@ -112,6 +113,7 @@ KS2Tab:AddButton({
     Name = "Autofarm",
     Callback = function()
 	loadstring(game:HttpGet("https://rawscripts.net/raw/My-Restaurant!-Fast-Autofarm-4610"))()
+	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "My Restaurant Autofarm", Text = "Autofarm was succesfully enabled!"})
     end
 })
 
