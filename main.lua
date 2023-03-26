@@ -107,7 +107,13 @@ KS2Tab:AddButton({
         MM2()
     end
 })
-
+KS2Tab:AddLabel("My Restaurant")
+KS2Tab:AddButton({
+    Name = "Autofarm",
+    Callback = function()
+	loadstring(game:HttpGet("https://rawscripts.net/raw/My-Restaurant!-Fast-Autofarm-4610"))()
+    end
+})
 
 AIO:AddButton({
     Name = "Work at a Pizza Place",
