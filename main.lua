@@ -76,8 +76,66 @@ rec:AddButton({
     end
 })
 end
+if PlaceID == 192800 then
+    rec:AddLabel("Work At A Pizza Place")
+rec:AddButton({
+    Name = "All in one",
+    Callback = function()
+        PizzaPlace()
+    end
+})
+end
+if PlaceID == 147848991 then
+    rec:AddLabel("Be A Parkour Ninja")
+    rec:AddButton({
+        Name = "Hitboxes",
+        Callback = function()
+            NinjaHitboxes()
+        end
+    })
+end
+if PlaceID == 2768379856 then
+    rec:AddLabel("SCP 3008")
+    rec:AddButton({
+        Name = "All in One",
+        Callback = function()
+            loadstring(game:HttpGet'https://raw.githubusercontent.com/RunDTM/scripts/main/3008.lua')()
+        end
+    })
+end
+if PlaceID == 2788229376 then
+    rec:AddLabel("DaHood")
+    rec:AddButton({
+        Name = "All in One",
+        Callback = function()
+            SwagMode()
+        end
+    })
+end
+if PlaceID == 6516141723 then
+    rec:AddLabel("Doors")
+    rec:AddButton({
+        Name = "All in One",
+        Callback = function()
+            Doors()
+        end
+    })
+end
+if PlaceID == 142823291 then
+    rec:AddLabel("Murder Mystery 2")
+    rec:AddButton({
+    Name = "All in One",
+    Callback = function()
+        MM2()
+    end
+})
+end
 
-
+----------------------------------
+--                              --
+--       RECOMMENDED END        --
+--                              --
+----------------------------------
 
 KSTab:AddLabel("Energy Assault")
 KSTab:AddButton({
@@ -145,8 +203,8 @@ KS2Tab:AddLabel("My Restaurant")
 KS2Tab:AddButton({
     Name = "Autofarm",
     Callback = function()
-	loadstring(game:HttpGet("https://rawscripts.net/raw/My-Restaurant!-Fast-Autofarm-4610"))()
-	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "My Restaurant Autofarm", Text = "Autofarm was succesfully enabled!"})
+	-- loadstring(game:HttpGet("https://rawscripts.net/raw/My-Restaurant!-Fast-Autofarm-4610"))()
+	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "ERROR | My Restaurant Autofarm", Text = "This script has been patched"})
     end
 })
 
