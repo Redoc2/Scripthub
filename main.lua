@@ -1,4 +1,6 @@
 -- DEFINE LIBRARY
+
+-- loadstring(game:HttpGet('https://raw.githubusercontent.com/Redoc2/Scripthub/main/main.lua'))()
 game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Scripthub", Text = "Made by Redoc_2"})
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Redoc2/Scripthub/main/scripts.lua')))()
@@ -60,14 +62,14 @@ end
 local PlaceID = game.PlaceId
 
 if PlaceID == 6172932937 then
-  KSTab:AddLabel("Energy Assault")
-KSTab:AddButton({
+  rec:AddLabel("Energy Assault")
+  rec:AddButton({
 	Name = "Silent Aim",
 	Callback = function()
   	    EnergyAssaultSilentAim()
     end
 })
-KSTab:AddButton({
+rec:AddButton({
     Name = "ESP",
     Callback = function()
     EnergyAssaultESP()
