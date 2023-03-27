@@ -6,6 +6,11 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/Redoc2/Scripthub/mai
 local Window = OrionLib:MakeWindow({Name = "ScriptHub", HidePremium = false, SaveConfig = true, ConfigFolder = "ScripHub1"})
 
 -- DEFINE TABS
+local rec = Window:MakeTab({
+    Name = "Recommended",
+    Icon = " ",
+    PremiumOnly = false
+})
 local KSTab = Window:MakeTab({
 	Name = "Scripts P1",
 	Icon = " ",
@@ -40,12 +45,38 @@ local CRTab = Window:MakeTab({
 })
 
 
-_G.Key = "Your fucking dad"
+_G.Key = "where 0n1kidd"
 _G.KeyInput = "string"
 
 function CorrectKey()
     -- Script Here!!
 end
+----------------------------------
+--                              --
+--        RECOMMENDED           --
+--                              --
+----------------------------------
+
+local PlaceID = game.PlaceId
+
+if PlaceID == 6172932937 then
+  KSTab:AddLabel("Energy Assault")
+KSTab:AddButton({
+	Name = "Silent Aim",
+	Callback = function()
+  	    EnergyAssaultSilentAim()
+    end
+})
+KSTab:AddButton({
+    Name = "ESP",
+    Callback = function()
+    EnergyAssaultESP()
+    end
+})
+end
+
+
+
 KSTab:AddLabel("Energy Assault")
 KSTab:AddButton({
 	Name = "Silent Aim",
