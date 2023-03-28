@@ -1,7 +1,4 @@
 -- DEFINE LIBRARY
-local chatrem = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
-
-chatrem:FireServer('I use Redoc2 Scripthub 🤓', "All")
 -- loadstring(game:HttpGet('https://raw.githubusercontent.com/Redoc2/Scripthub/main/main.lua'))()
 game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Scripthub", Text = "Made by Redoc_2"})
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
