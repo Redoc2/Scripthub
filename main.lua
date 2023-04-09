@@ -253,12 +253,7 @@ MSTab:AddButton({
         game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
     end
 })
-MSTab:AddButton({
-    Name = "AntiAFK",
-    Callback = function()
-	antiafk()
-    end
-})
+antiafk()
 
 SGTab:AddLabel("Energy Assault")
 SGTab:AddLabel("Be A Parkour Ninja")
