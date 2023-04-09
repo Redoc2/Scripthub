@@ -1272,9 +1272,13 @@ while(true)do
 end
 end
 function antiafk()
-	ait(0.5)
+	wait(0.5)
+local kicked = 0
+print("[AAFK] Enabled AntiAFK")
 bb=game:service'VirtualUser'
 game:service'Players'.LocalPlayer.Idled:connect(function()
 bb:CaptureController()bb:ClickButton2(Vector2.new())
+kicked = kicked + 1
+print("[AAFK] Roblox tried to kick you for the " .. kicked .. "th time")
 end)
 end
