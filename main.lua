@@ -46,7 +46,7 @@ local CRTab = Window:MakeTab({
 })
 
 
-_G.Key = "where 0n1kidd"
+_G.Key = "there 0n1kidd"
 _G.KeyInput = "string"
 
 function CorrectKey()
